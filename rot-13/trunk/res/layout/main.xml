@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<EditText
+	android:id="@+id/rot13input"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="top"
+    android:text="@string/rot13input"
+    android:inputType="textMultiLine"/>
+<Button
+	android:id="@+id/rot13button"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/rot13button">
+</Button>
+</LinearLayout>
