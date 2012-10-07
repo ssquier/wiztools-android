@@ -30,10 +30,10 @@ public class DateArithmeticActivity extends Activity {
     }
 
     private int getCalendarUnit(String unit) {
-        if("Day".equals(unit)) {
+        if("Day(s)".equals(unit)) {
             return Calendar.DATE;
         }
-        else if("Month".equals(unit)) {
+        else if("Month(s)".equals(unit)) {
             return Calendar.MONTH;
         }
         else {
