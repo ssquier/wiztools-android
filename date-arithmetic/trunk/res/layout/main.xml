@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="vertical">
+    <TableRow>
+        <DatePicker android:calendarViewShown="false"
+                    android:id="@+id/dt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                />
+    </TableRow>
+    <TableRow>
+        <RadioGroup android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/plus"
+                    android:orientation="horizontal"
+                >
+
+            <RadioButton android:id="@+id/plus"
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:text=" + "
+                         android:layout_gravity="center|left"
+                         android:layout_weight="1"
+                    />
+            <RadioButton android:id="@+id/minus"
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:text=" - "
+                         android:layout_gravity="center"
+                    />
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        <EditText android:id="@+id/amount"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Units"
+                  android:inputType="number"
+                />
+    </TableRow>
+    <TableRow>
+        <Spinner android:id="@+id/unit"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                />
+    </TableRow>
+    <TableRow>
+        <Button android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Compute"
+                android:onClick="compute"
+                />
+    </TableRow>
+    <TableRow>
+        <TextView android:id="@+id/out"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textIsSelectable="true"
+                  android:textSize="18dp"
+                  android:gravity="center"
+                  android:hint="Result"
+                />
+    </TableRow>
+</TableLayout>
